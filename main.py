@@ -27,7 +27,7 @@ class SteveHundredsLayout(GridLayout):
     def onClick(self, instance):
         print(instance.text)
         instance.disabled = True
-        instance.background_disabled_normal = self.images[int(instance.text)-1]
+        instance.background_disabled_normal = './shared/'+self.images[int(instance.text)-1]
         instance.text=''
         self.count += 1
         if(self.count == 2):
